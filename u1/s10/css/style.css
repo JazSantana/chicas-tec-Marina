@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.flex-container {
+  background-color: indigo;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.flex-container div {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+#item-1 {
+  order: 4;
+  text-align: center;
+  flex-grow: 0;
+}
+#item-3 {
+  order: 3;
+  flex-grow: 0;
+}
+#item-5 {
+  order: -3;
+  flex-grow: 0;
+}

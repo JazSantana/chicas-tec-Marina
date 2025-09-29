@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container div {
+  border: 4px solid rgb(67, 236, 95);
+  display: flex;
+  padding: 10px;
+  width: 300px;
+  margin: 13px;
+  justify-content: center;
+}
+body {
+  background-color: rgb(179, 245, 173);
+}
+.container {
+  position: relative;
+}
+#div-2 {
+  border: 5px solid rgb(36, 151, 88);
+  color: white;
+  background-color: rgb(36, 151, 88);
+  position: fixed;
+  left: 880px;
+  top: 500px;
+}
+#div-1 {
+  background-color: rgb(58, 173, 58);
+  border: 5px solid rgb(58, 173, 58);
+  color: white;
+  width: auto;
+  height: 80px;
+  margin: 0;
+  position: sticky;
+  top: 0;
+}
+#b {
+  background-color: darkseagreen;
+  position: absolute;
+  bottom: 60px;
+  left: 400px;
+}
+#div-3 {
+  position: relative;
+  left: 30px;
+}

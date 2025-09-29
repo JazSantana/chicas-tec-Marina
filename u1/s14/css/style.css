@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 10px;
+}
+body {
+  background-color: rgb(219, 171, 171);
+}
+@media only screen and (max-width: 900px) {
+  body {
+    background: linear-gradient(to right, #e3e4e9, #9fd3f5);
+  }
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    background-color: rgb(124, 202, 202);
+  }
+}
+h1 {
+  color: blueviolet;
+}
+@media (max-width: 668px) {
+  h1 {
+    color: rgb(155, 57, 147);
+  }
+}
+.arcoiris {
+  font-size: 40px;
+  background: linear-gradient(to right, rgb(104, 44, 214), rgb(223, 41, 223));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1em;
+}
+.arcoiris2 {
+  font-size: 40px;
+  background: linear-gradient(to right, rgb(104, 44, 214), rgb(223, 41, 223));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.arcoiris3 {
+  font-size: 40px;
+  background: linear-gradient(to right, rgb(104, 44, 214), rgb(223, 41, 223));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.arcoiris2 {
+  font-size: 2em;
+}
+.arcoiris3 {
+  font-size: 3em;
+}
