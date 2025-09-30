@@ -1,14 +1,16 @@
 
 import './App.css'
-import './components/header.jsx'
+import Footer from './components/footer'
+import Header from './components/header'
+import Section from './components/section'
+import './index.css'
 
 function App() {
-  
-
   return (
     <>
     <Header></Header>
-      <h1>hola mundo</h1>
+    <Section></Section>
+    <Footer></Footer>
     </>
   )
 }

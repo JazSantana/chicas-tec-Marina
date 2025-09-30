@@ -1,0 +1,23 @@
+.Barranav h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: rgb(195, 0, 255);
+  margin-top: 20px;
+}
+
+.Nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 30px;
+}
+.Nav-links a {
+  color: rgb(162, 0, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Nav-links a:hover {
+  color: rgb(107, 0, 139);
+}
