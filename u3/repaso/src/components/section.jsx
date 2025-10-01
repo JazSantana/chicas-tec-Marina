@@ -1,5 +1,5 @@
-import "./section.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./section.css"
 function Section (){
     return (
     <>
