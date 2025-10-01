@@ -20,7 +20,28 @@ body {
   border-radius: 6px;
   color: rgb(183, 0, 255);
 }
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 0 60px;
+}
+.title {
+  text-align: center;
 
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container-2 div {
+  flex: 1;
+  border: 1px solid #ebeaea;
+  background-color: #ebeaea;
+  padding: 9px;
+  border-radius: 8px;
+  box-shadow: 0px 7px 53px 9px rgba(122, 22, 222, 0.8);
+  -webkit-box-shadow: 0px 7px 53px 9px rgba(122, 22, 222, 0.8);
+  -moz-box-shadow: 0px 7px 53px 9px rgba(122, 22, 222, 0.8);
+}
 .barranav h3 {
   text-align: center;
   margin-bottom: 0px;
