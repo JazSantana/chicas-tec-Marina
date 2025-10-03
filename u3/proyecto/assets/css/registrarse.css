@@ -54,9 +54,10 @@ body {
 .form-container {
   justify-items: end;
   display: inline-block;
-  margin-left: 800px;
+  margin-left: 500px;
+  margin-right: 500px;
   margin-top: 30px;
-  padding: 20px;
+  padding: 60px;
   border: 5px solid plum;
 }
 .form-container button {
@@ -65,4 +66,19 @@ body {
   background-color: rgb(156, 93, 214);
   border: white;
   border-radius: 4px;
+}
+label {
+  margin-bottom: 10px;
+}
+#password {
+  border-radius: 5px;
+  width: 300px;
+}
+#nombre {
+  border-radius: 5px;
+  width: 300px;
+}
+#email {
+  border-radius: 5px;
+  width: 300px;
 }
