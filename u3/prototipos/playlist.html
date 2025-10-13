@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vinyl Player — MoodSpace</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="playlist.css" />
+  </head>
+  <body>
+    <div class="player-wrap">
+      <header class="player-header">
+        <nav>
+          <ul class="menu">
+            <li>home</li>
+            <li>publicaciones</li>
+            <li>libros</li>
+            <li class="active">playlist</li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <span class="followers">23k seguidores</span>
+          <div class="avatar"></div>
+        </div>
+      </header>
+
+      <section class="player-body">
+        <!-- Left: vinyl -->
+        <div class="left-col">
+          <div class="vinyl-wrap">
+            <div id="vinyl" class="vinyl">
+              <!-- center label -->
+              <div class="label">
+                <div class="label-text">Addict</div>
+              </div>
+            </div>
+
+            <div class="controls">
+              <button id="prevBtn" class="ctl small">⟨</button>
+              <button id="playBtn" class="ctl play">►</button>
+              <button id="pauseBtn" class="ctl pause hidden">❚❚</button>
+              <button id="nextBtn" class="ctl small">⟩</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: info -->
+        <div class="center-col">
+          <h1 class="track-title" id="trackTitle">Addict</h1>
+          <p class="artist">silva hound</p>
+
+          <div class="description" id="trackDesc">
+            ADDICT™ es una canción compuesta por el compositor de YouTube Silva
+            Hound e interpretada por Michael Kovach como Angel Dust y Kelly
+            "Chi-Chi" Boyer como Cherri Bomb.
+          </div>
+
+          <a id="readMore" href="#" class="read-more">leer más..</a>
+        </div>
+
+        <!-- Right: playlist -->
+        <aside class="right-col">
+          <h3 class="playlist-title">Playlist</h3>
+          <div class="playlist" id="playlist">
+            <!-- JS generará las canciones -->
+          </div>
+        </aside>
+      </section>
+
+      <!-- Bottom search bar -->
+      <div class="search-bar">
+        <input
+          id="searchInput"
+          placeholder="🔍 presiona para buscar una canción"
+        />
+        <button id="clearSearch" class="xbtn">✕</button>
+      </div>
+
+      <!-- audio -->
+      <audio id="audio" preload="metadata"></audio>
+    </div>
+
+    <script src="playlist.js"></script>
+  </body>
+</html>

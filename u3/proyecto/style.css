@@ -18,6 +18,8 @@
   border: 1px solid #ebeaea;
   background-color: #ebeaea;
   padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 15px;
 }
 .contacto {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -42,4 +44,21 @@
 }
 body {
   margin: 0;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.nav-links a {
+  color: blue;
+  text-decoration: none;
+}
+.footer-content {
+  background-color: black;
+  padding: 20px;
+}
+.footer-content p {
+  color: white;
 }
