@@ -1,14 +1,35 @@
 
 import './App.css'
-import './components/header.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from './components/footer'
+import Header from './components/header'
+import Section from './components/section'
+import './index.css'
 
 function App() {
-  
-
   return (
     <>
+    <BrowserRouter>
     <Header></Header>
-      <h1>hola mundo</h1>
+    
+
+    <Routes>
+
+      <Route
+      path='/'
+      element={
+        <>
+        </>
+      }
+      />
+    </Routes> 
+
+
+
+
+    <Section></Section>
+    <Footer></Footer>
+    </BrowserRouter>
     </>
   )
 }
