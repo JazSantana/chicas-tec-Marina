@@ -1,14 +1,17 @@
 import { useState } from 'react'
+import app from './firebase'
 
-
-import './components/AddUser'
+import AddUser from './components/AddUser'; 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  console.log(app);
 
   return (
     <>
+    <div>
+      <h1>Mi pagina web con React y Firebase</h1>
+    </div>
      <AddUser></AddUser> 
     </>
   )
