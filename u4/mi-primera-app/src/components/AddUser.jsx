@@ -9,9 +9,9 @@ function AddUser() {
     const AgregarUsuario = async () => {
         try {
       const docRef = await addDoc(collection(db, "users"), {
-       first: "Ada",
-       last: "Lovelace",
-       born: 1815
+       nombre: Nombre,
+       edad: Edad,
+       fecha: new Date ()
      });
       console.log("Document written with ID: ", docRef.id);
      } catch (e) {
@@ -23,7 +23,7 @@ function AddUser() {
         <div>
             <h1>Formulario</h1>
             <label htmlFor="">Nombre</label>
-            <input type="text" placeholder="Escribe tu nombre" value={Nombre}  onChange={(e) => setNombre(Edad.target.value)}/>
+            <input type="text" placeholder="Escribe tu nombre" value={Nombre}  onChange={(e) => setNombre(e.target.value)}/>
             <label htmlFor="">Edad</label>
             <input type="text" placeholder="Edad" value={Edad} onChange={(e) => setEdad(e.target.value)}  />
             <button onClick={AgregarUsuario}>Agregar usuario</button>
