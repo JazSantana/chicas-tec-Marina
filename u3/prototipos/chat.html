@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Mascota</title>
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <!-- Botón / Mascota flotante -->
+    <div id="pet-bubble" title="Haz clic para chatear 🩷">🐰</div>
+
+    <!-- Ventana de chat -->
+    <div id="chat-window" class="hidden">
+      <div class="chat-header">
+        <span id="chat-pet-name">🐰 Conejita</span>
+        <button id="change-pet">🌈 Cambiar mascota</button>
+      </div>
+      <div id="chat-messages"></div>
+      <div class="chat-input">
+        <input type="text" id="chat-text" placeholder="Escribe un mensaje..." />
+        <button id="send-btn">Enviar</button>
+      </div>
+    </div>
+
+    <!-- Selector de mascotas -->
+    <div id="pet-selector" class="hidden">
+      <h3>Elige tu mascota ✨</h3>
+      <div class="pet-options">
+        <div class="pet-option" data-pet="coneja">🐰</div>
+        <div class="pet-option" data-pet="gato">🐱</div>
+        <div class="pet-option" data-pet="nube">☁️</div>
+        <div class="pet-option" data-pet="mariposa">🦋</div>
+        <div class="pet-option" data-pet="flor">🌸</div>
+      </div>
+    </div>
+
+    <script src="chat.js"></script>
+  </body>
+</html>
