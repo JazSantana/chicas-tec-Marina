@@ -1,12 +1,22 @@
+
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_DOMINIO.firebaseapp.com",
-  projectId: "TU_ID_DEL_PROYECTO",
-  storageBucket: "TU_BUCKET.appspot.com",
-  messagingSenderId: "TU_ID",
-  appId: "TU_APP_ID"
-};
+  apiKey: "AIzaSyDrSZH09khxy-WyFJ5pq7yfWLIHxAHapSo",
+  authDomain: "mi-app-13f42.firebaseapp.com",
+  projectId: "mi-app-13f42",
+  storageBucket: "mi-app-13f42.firebasestorage.app",
+  messagingSenderId: "131598500855",
+  appId: "1:131598500855:web:63d3cd269eafbe778d24f2"
+};   
 
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+
+
+export default app;
+export {db, getAuth};
+
