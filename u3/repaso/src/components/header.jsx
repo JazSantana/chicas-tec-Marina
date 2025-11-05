@@ -9,7 +9,7 @@ function Header (){
         <ul className="Nav-links">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Características</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="./RegistrarUsuario.jsx">Contacto</a></li>
         </ul>
       </nav>
      </header>

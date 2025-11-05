@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from './components/footer'
 import Header from './components/header'
 import Section from './components/section'
+import RegistrarUsuario from './components/RegistrarUsuario';
 import './index.css'
 
 function App() {
@@ -18,12 +19,15 @@ function App() {
       <Route
       path='/'
       element={
-        <>
-        </>
+        <RegistrarUsuario/>
       }
       />
+      <Route
+      path=''
+      element
+      />
     </Routes> 
-
+    
 
 
 
