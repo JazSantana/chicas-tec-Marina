@@ -1,15 +1,31 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f3ff;
+  color: #333;
 }
 
 .bienvenidos {
-  background-color: rgb(156, 93, 214);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(135deg, #a18cd1, #5d4fb0);
   text-align: center;
-  color: #ffff;
-  padding: 40px;
-  margin: 0px;
+  color: #fff;
+  padding: 100px 20px;
+
+  box-shadow: 0 6px 25px rgba(93, 79, 176, 0.4);
+}
+
+.bienvenidos h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.bienvenidos h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #e8e8ff;
 }
 .container-2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -59,31 +75,106 @@ body {
 .nav-links a:hover {
   color: rgb(107, 0, 139);
 }
-.foot {
-  margin-top: 40px;
-  padding: 10px 10px;
-  background-color: rgb(54, 52, 52);
-  color: white;
-  text-align: center;
-  margin-bottom: 5px;
-}
-body {
-  margin: 0;
-}
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-}
-.nav-links a {
-  color: blue;
-  text-decoration: none;
-}
 .footer-content {
   background-color: black;
   padding: 20px;
 }
 .footer-content p {
   color: white;
+}
+.registrate {
+  background-color: #fff;
+  color: #5d4fb0;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.registrate:hover {
+  background-color: #ece8ff;
+  transform: translateY(-2px);
+}
+/* --- SECCIÓN INTRO --- */
+.intro {
+  background-color: #f8f5ff;
+  padding: 60px 20px;
+}
+
+.titulo-seccion {
+  color: #5d4fb0;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(93, 79, 176, 0.2);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h4 {
+  color: #6c4ecb;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  color: #555;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(93, 79, 176, 0.3);
+}
+
+/* --- SECCIÓN CONTACTO --- */
+.contacto {
+  background: linear-gradient(135deg, #a18cd1, #5d4fb0);
+  color: white;
+  padding: 70px 20px;
+  margin-top: 80px;
+  text-align: center;
+  box-shadow: 0 -8px 25px rgba(93, 79, 176, 0.4);
+}
+
+.btn-contacto {
+  background-color: white;
+  color: #5d4fb0;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 12px 28px;
+  border: none;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.btn-contacto:hover {
+  background-color: #ece8ff;
+  transform: translateY(-3px);
+}
+.foot {
+  padding: 10px 10px;
+  background-color: rgb(54, 52, 52);
+  color: white;
+  text-align: center;
 }

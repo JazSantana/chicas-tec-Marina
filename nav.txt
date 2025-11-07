@@ -1,0 +1,3 @@
+-crear otro componente navbarVisitante.jsx
+-otro componente navbarUsuario.jsx
+para poder hacer dos barras distintas cuando el usurio se va a registrar y cuando ya entro a su cuenta

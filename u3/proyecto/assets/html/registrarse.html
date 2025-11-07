@@ -29,12 +29,14 @@
     <section>
       <div class="container-fluid bienvenidos">
         <h1 class="display-3">Bienvenido a Mi sitio</h1>
-        <h4>Una solucion simple para comenzar tu proyecto web</h4>
+        <h4>Una solución simple para comenzar tu proyecto web</h4>
         <button type="button" class="btn btn-light registrate">
           Empieza ahora
         </button>
       </div>
     </section>
+
+    <!-- FORMULARIO -->
     <div class="form-container">
       <h2>Registro de Usuario</h2>
       <form>
@@ -47,15 +49,17 @@
           required
         />
         <br /><br />
-        <label for="email">Correo Electronico</label><br />
+
+        <label for="email">Correo Electrónico</label><br />
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Escribe tu correo electronico"
+          placeholder="Escribe tu correo electrónico"
           required
         />
         <br /><br />
+
         <label for="password">Contraseña</label><br />
         <input
           type="password"
@@ -64,23 +68,18 @@
           placeholder="Crea una contraseña"
           required
         />
+        <br /><br />
 
-        <br /><br />
-        <p>Genero:</p>
-        <input type="radio" id="hombre" name="genero" value="hombre" />
-        <label for="hombre">Hombre</label><br />
-        <input type="radio" id="mujer" name="genero" value="mujer" />
-        <label for="mujer">Mujer</label><br />
-        <input type="radio" id="otro" name="genero" value="otro" />
-        <label for="otro">Prefiero no decir</label>
-        <br /><br />
-        <label for="fecha">Fecha de Nacimiento</label><br />
-        <input type="date" id="fecha" name="fecha" required />
-        <br /><br />
-        <input type="checkbox" id="terminos" name="terminos" required />
-        <label for="terminos">Acepto los termino y condiciones</label> <br />
         <br />
-        <button type="submit">Regristrarse</button>
+        <label for="fecha">Fecha de Nacimiento</label><br />
+        <input type="date" id="fecha" name="fecha" required /><br /><br />
+
+        <div class="terminos">
+          <input type="checkbox" id="terminos" name="terminos" required />
+          <label for="terminos">Acepto los términos y condiciones</label>
+        </div>
+
+        <button type="submit">Registrarse</button>
       </form>
     </div>
     <footer class="foot">
