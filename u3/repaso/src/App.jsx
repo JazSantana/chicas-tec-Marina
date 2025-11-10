@@ -1,41 +1,32 @@
-
-import './App.css'
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from './components/footer'
-import Header from './components/header'
-import Section from './components/section'
-import RegistrarUsuario from './components/RegistrarUsuario';
-import './index.css'
+import Footer from "./components/footer.jsx";
+import Header from "./components/header.jsx";
+import Login from "./components/Login.jsx";
+import RegistrarUsuario from "./components/RegistrarUsuario.jsx";
+import Caracteristicas from "./pages/caracteristicas.jsx";
+import Inicio from "./pages/inicio.jsx";
+
+import "./index.css";
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <Header></Header>
-    
+      <BrowserRouter>
+        <Header />
 
-    <Routes>
+        <Routes>
+          <Route path="/inicio" element={<Inicio />} />
+          <Route path="/caracteristicas" element={<Caracteristicas />} />
+          <Route path="/registrar" element={<RegistrarUsuario />} />
+          <Route path="/Login" element={<Login />} />
+        </Routes>
 
-      <Route
-      path='/contacto'
-      element={
-        <RegistrarUsuario/>
-      }
-      />
-      <Route
-      path=''
-      element
-      />
-    </Routes> 
-    
-
-
-
-    <Section></Section>
-    <Footer></Footer>
-    </BrowserRouter>
+      
+        <Footer />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

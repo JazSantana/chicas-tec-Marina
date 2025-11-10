@@ -25,16 +25,47 @@ function RegistrarUsuario({OnRegister, cambiarVista}){
   });
  }
 
-    return (
-       <div className="min-h-screen flex items-center justify-center   to-white "> 
-       <div className="bg-white shadow-xl rounded-2xl p-6 w-full max-w-md border border-purple-200 space-y-3 mt-0" >
-        <h1  className="text-2xl font-semibold text-purple-700 text-center mb-6">Registrar Usuario</h1>
-        <input className = "w-full p-2 border border-purple-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" type="email" placeholder="Escribe tu Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input className = "w-full p-2 border border-purple-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" type="password" placeholder="Escribe tu contraseña" value={password} onChange={(e) => setPassword(e.target.value)}/>
-        <button className="w-full mt-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl shadow-md transition duration-200" onClick = {registrar}>Registrar</button>
-       <button onClick={cambiarVista}>Iniciar sesion</button>
-       </div>
-       </div>
+    return  (
+  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 via-rose-100 to-white p-6">
+    <div className="bg-white/70 backdrop-blur-sm shadow-xl rounded-2xl p-8 w-full max-w-md border border-pink-200 space-y-4 mt-0">
+      <h1 className="text-3xl font-bold text-pink-600 text-center mb-6">
+        Registrar Usuario
+      </h1>
+
+      <input
+        className="w-full p-3 border border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-400 focus:outline-none"
+        type="email"
+        placeholder="Escribe tu Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+
+      <input
+        className="w-full p-3 border border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-400 focus:outline-none"
+        type="password"
+        placeholder="Escribe tu contraseña"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+
+      <button
+        className="w-full mt-4 bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-xl shadow-md transition duration-200"
+        onClick={registrar}
+      >
+        Registrar
+      </button>
+
+      <div className="text-center mt-4">
+        <p className="text-gray-600 text-sm">¿Ya tienes una cuenta?</p>
+        <button
+          className="text-pink-500 hover:underline font-semibold mt-1"
+          onClick={cambiarVista}
+        >
+          Iniciar sesión
+        </button>
+      </div>
+    </div>
+  </div>
     )
 }
 export default RegistrarUsuario
